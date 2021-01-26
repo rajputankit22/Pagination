@@ -1,0 +1,33 @@
+.Pagination {
+  display: inline-block;
+  /* display: flex; */
+  align-items: center;
+}
+
+.Pagination button {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  border: 1px solid #ddd;
+}
+
+.Pagination button.active {
+  background-color: #4caf50;
+  color: white;
+  border: 1px solid #4caf50;
+}
+
+.Pagination button:hover:not(.active) {
+  background-color: rgb(226, 27, 27);
+}
+
+.Pagination button:first-child {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.Pagination button:last-child {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
